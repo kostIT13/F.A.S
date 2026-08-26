@@ -1,0 +1,13 @@
+services:
+  vector-search:
+    build: .
+    container_name: vector-search
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./collections:/app/collections
+      - ./src:/app/src 
+    environment:
+      - COLLECTIONS_PATH=/app/collections
+      - PYTHONUNBUFFERED=1
+    restart: unless-stopped

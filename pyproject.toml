@@ -1,9 +1,13 @@
 [project]
 name = "fas"
 version = "0.1.0"
-description = "Add your description here"
+description = "FAISS + FastEmbed RAG-сервис с REST API для векторных коллекций"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "faiss-cpu>=1.15.0",
     "fastapi>=0.141.1",
+    "fastembed>=0.8.0",
+    "sqlalchemy>=2.0.52",
+    "uvicorn[standard]>=0.30.0",
 ]
