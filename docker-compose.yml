@@ -5,9 +5,9 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./collections:/app/collections
-      - ./src:/app/src 
+      - ./data:/app/data
+      - ./src:/app/src
     environment:
-      - COLLECTIONS_PATH=/app/collections
+      - COLLECTIONS_PATH=/app/data
       - PYTHONUNBUFFERED=1
     restart: unless-stopped

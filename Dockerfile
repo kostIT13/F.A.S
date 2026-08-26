@@ -21,7 +21,7 @@ COPY src/ ./src/
 RUN uv pip install --system -e .
 
 # Создание директории для коллекций
-RUN mkdir -p /app/collections
+RUN mkdir -p /app/data
 
 EXPOSE 8000
 
